@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+    
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+       <!-- Libs CSS -->
+    <link rel="stylesheet" href="assets/fonts/Feather/feather.css">
+    <link rel="stylesheet" href="assets/libs/flickity/dist/flickity.min.css">
+    <link rel="stylesheet" href="assets/libs/flickity-fade/flickity-fade.css">
+    <link rel="stylesheet" href="assets/libs/aos/dist/aos.css">
+    <link rel="stylesheet" href="assets/libs/jarallax/dist/jarallax.css">
+    <link rel="stylesheet" href="assets/libs/highlightjs/styles/vs2015.css">
+    <link rel="stylesheet" href="assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.css">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="assets/css/theme.min.css">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="assets/css/theme.min.css">
+    <link rel="shortcut icon" href="assets\img\brand1.png" type="image/x-icon">
+    <title>Kout Immigration</title>
+
+  </head>
+  <body>
+      <form action="insert.php" method="POST">
+       <!-- CONTENT
+    ================================================== -->
+    <section class="section-border border-primary">
+      <div class="container d-flex flex-column">
+        <div class="row align-items-center justify-content-center no-gutters min-vh-100">
+          <div class="col-8 col-md-6 col-lg-7 offset-md-1 order-md-2 mt-auto mt-md-0 pt-8 pb-4 py-md-11">
+            <!-- Image -->
+            <img src="assets/img/illustrations/illustration-8.png" alt="..." class="img-fluid">
+
+          </div>
+          <div class="col-12 col-md-5 col-lg-4 order-md-1 mb-auto mb-md-0 pb-8 py-md-11">
+            
+            <!-- Heading -->
+            <h1 class="mb-0 font-weight-bold text-center">
+              Sign up
+            </h1>
+
+            <!-- Text -->
+            <p class="mb-6 text-center text-muted">
+              Sign up to start using our amazing services.
+            </p>
+
+            <!-- Form -->
+            <form class="mb-6">
+                
+                         
+               <!-- Account type -->
+            <div class="form-group pt-3">
+              <label>Account type: </label>  
+              <div class="pl-6 custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline1" name="acc_type" class="custom-control-input" value="foreigner" required>
+                <label class="custom-control-label" for="customRadioInline1">Foreigner</label>
+             </div>
+                 
+             <div class="pl-5 custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline2" name="acc_type" class="custom-control-input" value="citizen" required>
+                <label class="custom-control-label" for="customRadioInline2">Citizen</label>
+             </div>
+           </div>
+              
+                 <!-- name -->
+
+              <div class="form-label-group"> 
+                <input type="text" class="form-control form-control-flush" id="cardName" name="name" placeholder="Name" required>
+                <label for="cardName">Name</label>
+              </div>  
+                
+              <!-- Username -->
+                
+              <div class="form-label-group"> 
+                <input type="text" class="form-control form-control-flush" id="cardName" name="username" placeholder="Username" required>
+                <label for="cardName">Username</label>
+              </div>
+                
+
+              <!-- Email -->
+              <div class="form-label-group">
+                <input type="email" class="form-control form-control-flush" id="cardEmail" name="email" placeholder="name@address.com" required>
+                <label for="cardEmail">Email</label>
+              </div>
+
+              <!-- Password -->
+              <div class="form-label-group mb-5">
+                <input type="password" class="form-control form-control-flush" id="password" name="password" placeholder="Enter your password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                <label for="cardPassword">Password</label>
+              </div>
+                
+              <!-- Confirm Password -->
+              <div class="form-label-group mb-5">
+                <input type="password" class="form-control form-control-flush" id="confirm_password" name="confirm_password" placeholder="Re-Enter your password"required>
+                <label for="cardConfirm_Password">Confirm Password</label>
+              </div>
+                <script>
+              var password = document.getElementById("password")
+  , confirm_password = document.getElementById("confirm_password");
+
+function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Passwords Don't Match");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+}
+
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+              </script>
+
+
+              <!-- Submit -->
+              <button class="btn btn-block btn-primary" type="submit">
+                Sign up
+              </button>
+        
+            </form>
+              
+
+            <!-- Text -->
+            <p class="mb-0 font-size-sm text-center text-muted">
+              Already have an account? <a href="signin.html">Log in</a>.
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+ 
+    
+
+     <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
+    <script src="assets/libs/flickity-fade/flickity-fade.js"></script>
+    <script src="assets/libs/aos/dist/aos.js"></script>
+    <script src="assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+    <script src="assets/libs/jarallax/dist/jarallax.min.js"></script>
+    <script src="assets/libs/jarallax/dist/jarallax-video.min.js"></script>
+    <script src="assets/libs/jarallax/dist/jarallax-element.min.js"></script>
+    <script src="assets/libs/typed.js/lib/typed.min.js"></script>
+    <script src="assets/libs/countup.js/dist/countUp.min.js"></script>
+    <script src="assets/libs/highlightjs/highlight.pack.min.js"></script>
+    <script src="assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+
+
+    <!-- Theme JS -->
+    <script src="assets/js/theme.min.js"></script>
+      </form>
+  </body>
+
+</html>
